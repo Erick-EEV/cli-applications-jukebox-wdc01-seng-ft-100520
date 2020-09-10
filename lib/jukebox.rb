@@ -45,16 +45,16 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   puts "Please enter a command:"
   user_input = gets.chomp
   case user_input
     when "help"
      help
      when "play"
-       play
+       play(songs)
        when "list"
-       list
+       list(songs)
      when "exit"
        exit_jukebox
      end

@@ -59,6 +59,7 @@ def run
     else
       user_input == "exit"
       exit_jukebox
+      break
       end
     end
 end

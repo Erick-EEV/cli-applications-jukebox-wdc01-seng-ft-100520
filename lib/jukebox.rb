@@ -55,8 +55,7 @@ def run
        play
        when "list"
        list
-     when
-       user_input == "exit"
+     when "exit"
        exit_jukebox
        break
        end

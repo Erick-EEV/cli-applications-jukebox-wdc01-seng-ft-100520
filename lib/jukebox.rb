@@ -49,7 +49,7 @@ def run
   puts "Please enter a command:"
   user_input = gets.chomp
   while user_input != "exit" do
-    user_input1= gets.chomp
+    user_input1= gets.strip
     user_input
   if user_input == "help"
     help

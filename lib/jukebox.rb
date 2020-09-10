@@ -48,16 +48,16 @@ end
 def run
   puts "Please enter a command:"
   user_input = gets.chomp
-   while user_input != "exit" do
-     user_input1= gets.strip
+  case user_input
+   when user_input != "exit" do
      user_input
-   if user_input == "help"
+    when "help"
      help
-     elsif user_input == "play"
-       play(songs)
-       elsif user_input == "list"
-       list(songs)
-     else
+     when user_input == "play"
+       play
+       when user_input == "list"
+       list
+     when
        user_input == "exit"
        exit_jukebox
        break

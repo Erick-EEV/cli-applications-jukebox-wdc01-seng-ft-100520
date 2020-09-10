@@ -49,6 +49,7 @@ def run
   puts "Please enter a command:"
   user_input = gets.chomp
   while user_input != "exit" do
+    user_input1= gets.chomp
     user_input
   if user_input == "help"
     help
@@ -58,6 +59,7 @@ def run
       list(songs)
     else
       user_input == "exit"
+      user_input4 = gets.chomp
       exit_jukebox
       break
       end

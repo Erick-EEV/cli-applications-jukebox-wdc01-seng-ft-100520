@@ -59,7 +59,6 @@ def run
       list(songs)
     else
       user_input == "exit"
-      user_input4 = gets.chomp
       exit_jukebox
       break
       end
